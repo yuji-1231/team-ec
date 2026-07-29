@@ -1,0 +1,42 @@
+package jp.co.internous.framepj.model.form;
+
+import java.io.Serializable;
+import java.util.List;
+
+/**
+ * カートフォーム
+ * @author インターノウス
+ *
+ */
+public class CartForm implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private int productId;
+	private int productCount;
+	private List<Integer> checkedIdList;
+	
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	public int getProductCount() {
+		return productCount;
+	}
+	public void setProductCount(int productCount) {
+		this.productCount = productCount;
+	}
+	public List<Integer> getCheckedIdList() {
+		return checkedIdList;
+	}
+	public void setCheckedIdList(List<Integer> checkedIdList) {
+		this.checkedIdList = checkedIdList;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	} 
+	
+
+	
+
+}
